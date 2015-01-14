@@ -1,0 +1,50 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It basically found the needle in the haystack.  Instead of scanning through 1,000 lines of code
+it tolds me which lines had changed between the two versions, and showed me the lines, so I could
+quickly glance at it and tell what had actually changed.
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in
+the long term?
+
+It provides a way to save previous versions of a file.  If in the course of coding, you realize a
+way you had previously written it was what you actually needed, version control allows you to access
+that code instead of having to rethink what you had previously done.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros
+	- takes away human error, i.e. you stop doing them and forget to make some
+	  important commits
+
+
+Cons
+	- commits are done of a set timeframe, not on some framework on when you have made specific commits.  Because of this, going back to find specific commits could be difficult.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file seperately?
+
+The most common users of these products is different.  For most users of Google docs, the files they are creating are stand alone docs, and so each file is treated seperately.  Most users of Git are using it to do version control of code, and most files in code are inter-connected with other files, so Git saves multiple files in one commit.
+
+How can you use the commands git log and git diff to view the history of a file?
+
+You can use the git log to quickly tell how often the repository has been edited, see roughly when it was worked on, who worked on it, and depending on the quality of the notes, roughly what was done on a given commit.
+
+The git diff command allows you to look in more precise detail about what specifically was done for any single commit.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+You could always go back to a version of the code before it was broken, so git makes it easier to fix broken code, or at least limit what you have to look at to determine what is responsible for broken code.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+To see the changes I've made in this reflections docs.
+
+What happens when you initialize a repository?  Why do you need to do it?
+
+Initializing a repository creates a .git folder, containing various subfolders and files.  Those file allow your root directory to run version control.  I don't know the details, but somehow the files within the .git folder track metadata on the files you create, allowing you you maintain different versions of all your files.
+
+How is the staging area different from the working directory and the repository?  What value do you think it offers?
+
+It is a kind of gatekeeper between the working directory and repository.  The benefit it adds is it allow a way to control which files are added to the repository, and when they are added.
